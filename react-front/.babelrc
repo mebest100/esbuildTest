@@ -1,0 +1,19 @@
+{
+    "presets": [
+        "@babel/preset-env"    
+       
+    ],
+
+    "plugins": [ //添加babel的插件配置       
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css" //注意：这里的style必须是css
+            }
+        ],
+        "@babel/plugin-syntax-dynamic-import"
+    ]
+
+}
