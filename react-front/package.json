@@ -2,8 +2,7 @@
   "name": "react_travel",
   "version": "0.1.0",
   "private": true,
-  "main": "index.tsx",
-  "type": "module",
+  "main": "index.tsx", 
   "dependencies": {
     "@ant-design/icons": "4.3.0",
     "@babel/core": "7.16.0",
