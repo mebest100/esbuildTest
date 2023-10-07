@@ -31,7 +31,7 @@
     "typescript": "^4.7.2"
   },
   "scripts": {
-    "start": "node Dev-Server.js"
+    "start": "node Dev-Server.mjs"
   },
   "eslintConfig": {
     "extends": [
