@@ -1,7 +1,7 @@
 import * as esbuild from "esbuild";
 import { lessLoader } from "esbuild-plugin-less";
 import http from "node:http";
-// import htmlPlugin from "@chialab/esbuild-plugin-html";
+import htmlPlugin from "@chialab/esbuild-plugin-html";
 
 
 
@@ -19,7 +19,7 @@ const serverPort = 7002;
 const config = {
   entryPoints: ["./src/index.tsx"], // 指定入口文件
   bundle: true, // 捆绑成一个输出文件
-  outdir: "./public", // 输出文件的目录
+  outdir: "./public/build", // 输出文件的目录
   minify: false, // 不压缩代码（开发环境通常不需要压缩）  
   loader: { 
     ".css": "css", // 处理 CSS 文件
@@ -35,7 +35,7 @@ const config = {
     },
   plugins: [    
     lessLoader(),
-    // htmlPlugin(),   
+    htmlPlugin(),   
   ],
 };
 
