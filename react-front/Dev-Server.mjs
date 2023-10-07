@@ -1,6 +1,7 @@
 import * as esbuild from "esbuild";
 import { lessLoader } from "esbuild-plugin-less";
-import htmlPlugin from "@chialab/esbuild-plugin-html";
+import http from "node:http";
+// import htmlPlugin from "@chialab/esbuild-plugin-html";
 
 
 
@@ -34,7 +35,7 @@ const config = {
     },
   plugins: [    
     lessLoader(),
-    htmlPlugin(),   
+    // htmlPlugin(),   
   ],
 };
 
