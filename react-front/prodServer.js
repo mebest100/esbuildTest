@@ -1,5 +1,5 @@
-import { createRequire } from "node:module";
-const require = createRequire(import.meta.url);
+// import { createRequire } from "node:module";
+// const require = createRequire(import.meta.url);
 
 const express = require("express");
 const {
@@ -52,7 +52,7 @@ app.use(
 );
 
 app.use(history());
-app.use(express.static("./public/build"));
+app.use(express.static("./build"));
 
 const port = 9020;
 

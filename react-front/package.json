@@ -31,7 +31,8 @@
     "typescript": "^4.7.2"
   },
   "scripts": {
-    "start": "node Dev-Server.mjs"
+    "start": "node Dev-Server.mjs",
+    "build": "node Make-Production.mjs"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@chialab/esbuild-plugin-html": "^0.17.3",
+    "@jgoz/esbuild-plugin-html": "^1.0.5",
     "connect-history-api-fallback": "^2.0.0",
     "esbuild": "^0.19.4",
     "esbuild-plugin-less": "^1.3.1",
